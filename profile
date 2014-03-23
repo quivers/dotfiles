@@ -3,8 +3,8 @@
 #############################################################
 
 ###################
-# Set textmate as our default command line editor
-export EDITOR='mate -w'
+# Set sublime as our default command line editor
+export EDITOR='sublime_text'
 
 ###################
 # Load paths and environment variables
