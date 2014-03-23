@@ -249,3 +249,5 @@
 
 [push]
 	default = matching
+[credentials]
+	helper = keyring
