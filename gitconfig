@@ -1,6 +1,6 @@
 [user]
-	name = Matthew McCullough
-	email = matthew@github.com
+	name = Vincent Latombe
+	email = vincent@latombe.net
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -29,7 +29,6 @@
 	#untracked = cyan
 
 [gui]
-	recentrepo = /Users/mccm06/Documents/Temp/Scratch/hello/hgw1
 
 [core]
 	excludesfile = ~/.gitignore
@@ -189,21 +188,16 @@
 
 [difftool]
 	prompt = false
-[difftool "myaraxis"]
-	cmd = araxisgitdiff ONE $LOCAL THREE FOUR $REMOTE
 [diff]
 #	tool = araxis
-	tool = myaraxis
+	tool = kdiff3
 #	renames = true
 
 [mergetool]
 	prompt = false
 	keepBackup = false
-[mergetool "myaraxis"]
-    cmd = araxisgitmerge $PWD/$REMOTE $PWD/$BASE $PWD/$LOCAL $PWD/$MERGED
 [merge]
-#	tool = araxis
-	tool = p4merge
+	tool = kdiff3
 
 [branch]
     # Automatically set up pull to be --rebase
@@ -213,7 +207,7 @@
 	insteadOf = "ghg://"
 	pushInsteadOf = "ghg://"
 	# Example: git clone ghg://ntschutta/emacs
-[url "git://github.com/matthewmccullough/"]
+[url "git://github.com/vlatombe/"]
     insteadOf = "ghgm://"
     pushInsteadOf = "ghgm://"
     # Example: git clone ghgm://hellogitworld
@@ -226,16 +220,16 @@
 [url "https://github.com/"]
 	insteadOf = "ghh://"
 	pushInsteadOf = "ghh://"
-[url "https://github.com/matthewmccullough/"]
+[url "https://github.com/vlatombe/"]
 	insteadOf = "ghhm://"
 	pushInsteadOf = "ghhm://"
+[url "https://github"]
+	insteadOf = git://github
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 	
-[difftool "p4merge"]
-	cmd = \"/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE\"
 [http]
 	# proxy=http://something
 
