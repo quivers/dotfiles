@@ -251,3 +251,9 @@
 	default = matching
 [credential]
 	helper = gnome-keyring
+[identity "os"]
+	name = Vincent Latombe
+	email = vincent@latombe.net
+[identity "work"]
+	name = Vincent Latombe
+	email = vincent.latombe@amadeus.com
