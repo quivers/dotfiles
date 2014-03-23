@@ -32,8 +32,3 @@ plugins=(git battery brew osx gradle ant compleat dirpersist gem ssh-agent cloud
 
 source $ZSH/oh-my-zsh.sh
 
-##############################################################################
-# Boxen setup
-##############################################################################
-source /opt/boxen/env.sh
-
