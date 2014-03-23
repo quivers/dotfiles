@@ -235,7 +235,7 @@
 
 [github]
 	# https://github.com/blog/180-local-github-config
-	user = matthewmccullough
+	user = vlatombe
 	#token = PLACEHOLDER
 [hub]
 	protocol = https
@@ -249,5 +249,5 @@
 
 [push]
 	default = matching
-[credentials]
-	helper = keyring
+[credential]
+	helper = gnome-keyring
