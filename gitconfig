@@ -35,7 +35,7 @@
 	quotepath = false
 	autocrlf = input
 	safecrlf = warn
-	editor = sublime_text
+	editor = subl
 
 [alias]
 	br = branch -a
@@ -48,8 +48,8 @@
 	dc = diff --staged
 	dw = diff --word-diff
 	dcw = diff --color-words
-	dm = !git diff | mate
-	dv = !git diff | vim
+	de = !git diff | emacs
+	ds = !git diff | subl
 	who = shortlog -s --
 	ph = push
 	pl = pull
@@ -177,7 +177,7 @@
 	nfjsunpushed = log origin/master..master --oneline
 	rtheirs = !git checkout --theirs ./ && git add . && git rebase --continue
 	logfive = log --graph --pretty=oneline --abbrev-commit --decorate --all -5
-	noderelnotes = git log --graph --pretty=format:'%h%d %s (%an)'
+	noderelnotes = log --graph --pretty=format:'%h%d %s (%an)'
 	configsimplelog = config format.pretty oneline
 
 
