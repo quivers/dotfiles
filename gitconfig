@@ -172,7 +172,7 @@
 	cc-off = "config --unset --global credential.helper"
 	cc-helperosx = "config --global credential.helper 'osxkeychain'"
 	cc-helperwin = "config --global credential.helper 'wincred'"
-	cc-helperlin = "config --global credential.helper '/pathto/git-credential-gnome-key'"
+	cc-helperlin = "config --global credential.helper 'gnome-keyring'"
 	logm = log --stat -M
 	logcpy = log --stat -1 -C -C
 	pushsvn = svn dcommit
