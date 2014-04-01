@@ -143,6 +143,7 @@
 	gwcl = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	rlog = log --color-words --stat -3
 	lm = log --stat -M
+	puhs = push
 	
 	# Legit
 	legitsync = !legit sync \"$@\"
