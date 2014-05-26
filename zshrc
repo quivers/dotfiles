@@ -32,5 +32,7 @@ export CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 plugins=(git battery brew osx gradle ant compleat gem ssh-agent cloudapp ruby textmate sublime)
 
+function gi() { curl http://www.gitignore.io/api/$@ ;}
+
 source $ZSH/oh-my-zsh.sh
 
