@@ -64,6 +64,6 @@ symlinkifne .zprofile
 symlinkifne .zshenv
 symlinkifne .zshrc
 symlinkifne .vim
-
+symlinkifne .git_hooks
 popd
 

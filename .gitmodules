@@ -29,3 +29,6 @@
 [submodule "vim-surround"]
     path = vim/bundle/vim-surround
     url = git://github.com/tpope/vim-surround.git
+[submodule "git_hooks"]
+	path = git_hooks
+	url = http://rndwww.nce.amadeus.net/git/scm/~vlatombe/git-hooks.git
