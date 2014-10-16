@@ -111,6 +111,14 @@ alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v
 alias ls='ls -G -h -p '
 alias ll='ls -l -G -h -p '
 
+# Docker aliases
+dockerenter() {
+    nsenter --target $(docker inspect --format '{{.State.Pid}}' $1) --mount --uts --ipc --net --pid
+}
+alias docker-clean-containers="docker ps -a -notrunc| grep 'Exit' | awk '{print \$1}' | xargs -L 1 -r docker rm"
+alias docker-clean-images="docker images -a -notrunc | grep none | awk '{print \$3}' | xargs -L 1 -r docker rmi"
+alias docker-clean="docker-clean-containers && docker-clean-images"
+
 # Teaching Functions
 alias class.resethello='to.courses.git.repos;cd hellogitworld-bare.git; git push --mirror'
 alias class.simpleprompt='export PS1=" $ "'
