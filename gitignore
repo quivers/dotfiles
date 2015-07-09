@@ -4,3 +4,9 @@
 .gradle_targets
 .gradle
 .gradletasknamecache
+target/
+.idea/
+*.iml
+.project
+.classpath
+.settings/

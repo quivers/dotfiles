@@ -48,7 +48,7 @@ symlinkifne .cloudapp
 symlinkifne .conf
 symlinkifne .gemrc
 symlinkifne .gitconfig
-# symlinkifne .gitignore
+symlinkifne .gitignore
 symlinkifne .netrc
 symlinkifne .profile
 symlinkifne .rvmrc

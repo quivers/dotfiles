@@ -184,7 +184,8 @@
 	whitespace = nowarn
 [rerere]
 	enabled = true
-
+[push]
+  default = current
 [difftool]
 	prompt = false
 [diff]
@@ -236,9 +237,9 @@
 [gist]
 	private = yes
 	browse = yes
-#[credential]
-	# helper = cache --timeout=300
-
+[credential]
+  # helper = cache --timeout=300
+  helper = osxkeychain
 [push]
 	default = matching
 [difftool "Kaleidoscope"]
