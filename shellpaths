@@ -52,4 +52,7 @@ PATH=$PATH:/usr/local/share/npm/bin
 # JCE
 PATH=$PATH:~/.jce/bin
 PATH=$PATH:~/Projects/Cloudbees/dna/scripts
-PATH=$PATH:~/terraform_0.6.0_darwin_amd64
+PATH=$PATH:~/terraform_0.6.1_darwin_amd64
+
+#Secrets
+PATH=$PATH:~/Projects/Secrets/secrets-api/bin
