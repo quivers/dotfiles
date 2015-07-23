@@ -35,7 +35,11 @@
 	autocrlf = input
 	editor = vim
 
+[push]
+	default = current
+
 [alias]
+	amend = commit --amend
 	br = branch -a
 	s = status -u -s
 	cl = log --stat -C -2
@@ -96,7 +100,8 @@
 	purgeme = !git clean -fd && git reset --hard
 	prunenow = gc --prune=now
 	ri = rebase --interactive --autosquash
-	lol = log --pretty=oneline --graph --abbrev-commit --all
+	lol = log --pretty=oneline --graph --decorate --abbrev-commit
+	lola = log --pretty=oneline --graph --decorate --abbrev-commit --all
 	blg = log --graph --decorate --all --abbrev-commit --pretty=oneline
 	slog = log --graph --simplify-by-decoration --all --abbrev-commit --pretty=oneline
 	lgso = log --graph --date=short --pretty=format:'%C(yellow)%h%Creset %cn%x09%cd %s%C(green bold)%d'
@@ -216,6 +221,9 @@
 [url "git@github.com:vlatombe/"]
 	insteadOf = "ghsm://"
 	pushInsteadOf = "ghsm://"
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
+	pushInsteadOf = "https://github.com/"
 [url "https://github.com/"]
 	insteadOf = "ghh://"
 	pushInsteadOf = "ghh://"
