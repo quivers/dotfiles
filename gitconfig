@@ -125,6 +125,7 @@
 	configpushnothing = config push.default nothing
 	configpushtracking = config push.default matching
 	configpushcurrent = config push.default current
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 
 	# Other alias ideas that don't quite work yet
 	#testnewrepodoesntwork1 = !echo git init $1 && echo cd $1
@@ -189,19 +190,17 @@
 	whitespace = nowarn
 [rerere]
 	enabled = true
-[push]
-  default = current
 [difftool]
 	prompt = false
 [diff]
-	tool = opendiff
+	tool = p4mergetool
 #	renames = true
 
 [mergetool]
 	prompt = false
 	keepBackup = false
 [merge]
-	tool = opendiff
+	tool = p4mergetool
 
 [branch]
     # Automatically set up pull to be --rebase
@@ -248,8 +247,6 @@
 [credential]
   # helper = cache --timeout=300
   helper = osxkeychain
-[push]
-	default = matching
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
@@ -266,3 +263,11 @@ protocol = https
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE

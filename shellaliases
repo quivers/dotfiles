@@ -181,3 +181,5 @@ function screenshot.setpng() {
     defaults write com.apple.screencapture type png
 	killall SystemUIServer
 }
+
+alias gfd='bosh -n create release --force && bosh -n upload release && bosh -n deploy --recreate'
