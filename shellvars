@@ -1,5 +1,5 @@
 # Docker Machine
-eval "$(docker-machine env dev)"
+eval "$(docker-machine env default)"
 
 #########################################################################
 # Tool settings
