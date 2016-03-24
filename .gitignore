@@ -2,3 +2,5 @@ netrc
 boom
 cloudapp
 *~
+.idea
+dotfiles.iml
