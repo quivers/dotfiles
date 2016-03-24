@@ -2,10 +2,12 @@
 # Shell agnostic path setup
 ########################################################################
 
-# Vincent's Scripts
+# Derek's Scripts
 export PATH=$PATH:.
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.dotfiles/scripts
+export PATH=$PATH:~/Desktop/WS/dna/scripts
+export PATH=$PATH:~/Desktop/WS/tiger/cli/scripts
 
 # Dev frameworks
 #export PATH=$PATH:$ANT_HOME/bin

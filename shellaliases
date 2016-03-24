@@ -20,7 +20,6 @@ alias to.dropbox='cd ~/Dropbox'
 alias to.desktop='cd ~/Desktop'
 alias to.process='cd ${MYPROCESS}'
 alias to.docs='cd ${MYDOCUMENTS}'
-alias to.clients='cd ~/Documents/AI-Clients-Matthew'
 alias to.code='cd ${MYCODE}'
 alias to.dosug='cd ~/Documents/AI-Clients-Matthew/DOSUG'
 alias to.scratch='cd ${MYSCRATCH}'
@@ -101,6 +100,8 @@ alias files.usage='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep
 alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
 # Files in use in the Users directory
 alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep Users'
+
+alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
 
 # Directory listings
 # LS_COLORS='no=01;37:fi=01;37:di=07;96:ln=01;36:pi=01;32:so=01;35:do=01;35:bd=01;33:cd=01;33:ex=01;31:mi=00;05;37:or=00;05;37:'

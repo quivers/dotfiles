@@ -12,4 +12,3 @@ source ~/.shellvars
 source ~/.shellpaths
 source ~/.shellaliases
 source ~/.shellactivities
-

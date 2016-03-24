@@ -3,4 +3,4 @@ boom
 cloudapp
 *~
 .idea
-dotfiles.iml
+*.iml
