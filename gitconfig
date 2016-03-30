@@ -1,6 +1,6 @@
 [user]
-	name = Vincent Latombe
-	email = vincent@latombe.net
+	name = Derek Yama-Dang
+	email = dyamadang@cloudbees.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -35,7 +35,7 @@
 	quotepath = false
 	autocrlf = input
 	safecrlf = warn
-	editor = subl
+	editor = vim
 
 [alias]
 	br = branch
@@ -210,7 +210,7 @@
 	insteadOf = "ghg://"
 	pushInsteadOf = "ghg://"
 	# Example: git clone ghg://ntschutta/emacs
-[url "git://github.com/vlatombe/"]
+[url "git://github.com/quivers/"]
     insteadOf = "ghgm://"
     pushInsteadOf = "ghgm://"
     # Example: git clone ghgm://hellogitworld
@@ -223,7 +223,7 @@
 [url "https://github.com/"]
 	insteadOf = "ghh://"
 	pushInsteadOf = "ghh://"
-[url "https://github.com/vlatombe/"]
+[url "https://github.com/quivers"]
 	insteadOf = "ghhm://"
 	pushInsteadOf = "ghhm://"
 [url "https://github"]
@@ -238,7 +238,7 @@
 
 [github]
 	# https://github.com/blog/180-local-github-config
-	user = vlatombe
+	user = quivers
 	#token = PLACEHOLDER
 [hub]
 	protocol = https
@@ -254,9 +254,6 @@
 	default = matching
 [credential]
 	helper = gnome-keyring
-[identity "os"]
-	name = Vincent Latombe
-	email = vincent@latombe.net
 [identity "work"]
-	name = Vincent Latombe
-	email = vincent.latombe@amadeus.com
+	name = Derek Yama-Dang
+	email = dyamadang@cloudbees.com
