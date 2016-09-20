@@ -257,3 +257,7 @@
 [identity "work"]
 	name = Derek Yama-Dang
 	email = dyamadang@cloudbees.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f

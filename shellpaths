@@ -6,8 +6,8 @@
 export PATH=$PATH:.
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.dotfiles/scripts
-export PATH=$PATH:~/Desktop/WS/dna/scripts
-export PATH=$PATH:~/Desktop/WS/tiger/cli/scripts
+export PATH=~/WS/dna/scripts:$PATH
+export PATH=~/WS/tiger/cli/scripts:$PATH
 
 # Dev frameworks
 #export PATH=$PATH:$ANT_HOME/bin
