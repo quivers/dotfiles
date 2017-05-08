@@ -12,3 +12,4 @@ source ~/.shellvars
 source ~/.shellpaths
 source ~/.shellaliases
 source ~/.shellactivities
+source /Users/mccm06/.rvm/scripts/rvm

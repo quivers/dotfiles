@@ -21,6 +21,7 @@ export M2_HOME=/usr/local/Cellar/maven/3.3.9/libexec
 export M2=/usr/local/Cellar/maven/3.3.9/libexec/bin
 export MAVEN_OPTS="-Xms256m -Xmx1024m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5005,suspend=n"
 export PYTHONPATH=~/WS/dna:$PYTHONPATH
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 #########################################################################
 # Tool settings
