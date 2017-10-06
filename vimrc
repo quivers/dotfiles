@@ -24,3 +24,4 @@ set showmatch
 
 " make that backspace key work the way it should
 set backspace=indent,eol,start
+
