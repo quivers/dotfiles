@@ -23,5 +23,8 @@ shopt -s cmdhist
 # Load Matthew's Git bash prompt
 source ~/.dotfiles/bash_gitprompt
 
+# Bash autocompletion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 # Load Brew's git bash completion
 # source /usr/local/Cellar/git/1.8.0.1/etc/bash_completion.d/git-completion.bash

@@ -1,6 +1,6 @@
 [user]
 	name = Derek Yama-Dang
-	email = dyamadang@cloudbees.com
+	email = derek.yamadang@regeneron.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -256,7 +256,7 @@
 	helper = gnome-keyring
 [identity "work"]
 	name = Derek Yama-Dang
-	email = dyamadang@cloudbees.com
+	email = derek.yamadang@regeneron.com
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
