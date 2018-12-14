@@ -16,7 +16,8 @@ export MYDOWNLOADS=~/Downloads
 #########################################################################
 # Tool paths
 #########################################################################
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export JAVA_HOME="$(/usr/libexec/java_home -v 11)"
+export GOPATH=~/WS/go
 export M2_HOME=/usr/local/Cellar/maven/3.5.0/libexec
 export M2=/usr/local/Cellar/maven/3.5.0/libexec/bin
 export MAVEN_OPTS="-Xms256m -Xmx1024m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5005,suspend=n"
