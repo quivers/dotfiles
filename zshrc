@@ -30,7 +30,7 @@ export CASE_SENSITIVE="true"
 # export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
-plugins=(git battery brew osx gradle ant compleat gem ssh-agent cloudapp ruby textmate sublime)
+plugins=(git battery brew osx gradle ant compleat gem ssh-agent cloudapp)
 
 function gi() { curl http://www.gitignore.io/api/$@ ;}
 

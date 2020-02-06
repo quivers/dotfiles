@@ -1,10 +1,10 @@
-#############################################################
+ #############################################################
 # Generic configuration that applies to all shells
 #############################################################
 
 ###################
 # Set sublime as our default command line editor
-export EDITOR='sublime_text'
+export EDITOR='vi'
 
 ###################
 # Load paths and environment variables

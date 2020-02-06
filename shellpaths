@@ -4,12 +4,8 @@
 
 # Derek's Scripts
 export PATH=$PATH:.
-export PATH=$PATH:~/bin
 export PATH=$PATH:~/.dotfiles/scripts
-export PATH=~/WS/dna/scripts:$PATH
-export PATH=~/WS/tiger/cli/scripts:$PATH
-export PATH=~/WS/secrets-api/bin:$PATH
-export PATH=~/WS/bats/bin:$PATH
+export PATH=~/bin:$PATH
 
 # Dev frameworks
 #export PATH=$PATH:$ANT_HOME/bin

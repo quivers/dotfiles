@@ -31,7 +31,7 @@
 [gui]
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/derek.yamadang/.gitignore_global
 	quotepath = false
 	autocrlf = input
 	safecrlf = warn
@@ -230,7 +230,7 @@
 	insteadOf = git://github
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 	
 [http]
@@ -261,3 +261,6 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
